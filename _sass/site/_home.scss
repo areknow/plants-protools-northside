@@ -1,0 +1,66 @@
+#home {
+
+  .hero {
+    padding: 100px 0;
+    text-align: center;
+    img {
+      height: 300px;
+      margin: auto;
+    }
+  }
+
+  .soundcloud-frame { 
+    padding-bottom: 100px;
+  }
+
+  .footer {
+    text-align: center;
+    padding-bottom: 100px;
+    a {
+      text-decoration: none;
+      color: #000;
+      img {
+        height: 40px;
+        margin-right: 20px;
+      }
+      .tagline {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+@media (max-width: $phone) {
+  #home {
+    .hero {
+      padding: 50px 0;
+      img {
+        height: 200px;
+      }
+    }
+    .soundcloud-frame { 
+      padding-bottom: 50px;
+    }
+    .footer {
+      padding-bottom: 50px;
+      a {
+        display: block;
+        img {
+          margin: auto;
+          margin-bottom: 10px;
+          display: block;
+          height: 50px;
+        }
+        .tagline {
+          display: block;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
