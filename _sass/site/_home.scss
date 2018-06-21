@@ -1,15 +1,6 @@
 #home {
   background: rgb(245, 245, 245);
 
-  .hero {
-    padding: 100px 0;
-    text-align: center;
-    img {
-      height: 300px;
-      margin: auto;
-    }
-  }
-
   .slider {
     .item {
       height: 600px;
@@ -175,16 +166,26 @@
 
 @media (max-width: $phone) {
   #home {
-    .hero {
-      padding: 50px 0;
-      img {
-        height: 200px;
+    .slider {
+      .item {
+        height: 300px;
+      }
+      .slide-1 {
+        background-size: 200%;
+      }
+      .slide-2 {
+        background-size: 150%;
       }
     }
-    .soundcloud-frame { 
-      padding-bottom: 50px;
+    .feed-wrapper {
+      #instafeed {
+        a {
+          width: 50%;
+          opacity: 1;
+        }
+      }
     }
-    .footer {
+    .label {
       padding-bottom: 50px;
       a {
         display: block;

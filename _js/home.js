@@ -9,7 +9,7 @@
   // Instafeed options
   var feed = new Instafeed({
     get: 'user',
-    limit: 15,
+    limit: isMobile() ? 10 : 15,
     userId: '313147593',
     resolution: 'standard_resolution',
     template: '<a class="col two-point-four" href="{{link}}" target="_blank">' +
@@ -41,11 +41,9 @@
     // Owl slider load
     $(".owl-carousel").owlCarousel({
       items: 1,
-      dots: true
+      dots: true,
+      loop: true
     });
-
-    // tileHeight()
-    
 
   });// end document ready
 
@@ -66,6 +64,15 @@
   function tileHeight() {
     var tileWidth = $('#instafeed .tile').width();
     $('#instafeed .tile').height(tileWidth);
+  }
+
+  // ============================================
+  // Check if screen size is less than 600
+  // ============================================
+  function isMobile() {
+    if(window.innerWidth < 600) {
+      return true;
+    }
   }
 
 
